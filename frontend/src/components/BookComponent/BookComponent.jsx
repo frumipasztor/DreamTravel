@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './BookComponent.scss';
 import BookingForm from './BookingForm';
 import { useHistory } from "react-router-dom";
@@ -73,6 +73,22 @@ useEffect(() => {
   }
 }, []);
 
+const [avaliableData, setAvaliableData] = useState([]);
+
+useEffect(() => {
+  const dataFetch = async () => {
+    await avaliableDataFetch();
+  };
+  dataFetch();
+}, []);
+
+const avaliableDataFetch = async () => {
+  const result = await fetch("/api/travellimit");
+  const jsonData = await result.json();
+ // console.log(jsonData);
+  setAvaliableData(jsonData);
+};
+
 const logout = () => {
   localStorage.removeItem("myToken");
   history.push("/");
@@ -83,6 +99,7 @@ const logout = () => {
         <div className="Booking">
             <div className="booking-content">
                 <h1>Booking</h1>
+                <h3> Currently avaliable space {avaliableData.avaliable} !</h3>
                 <button onClick={logout}>LOG OUT</button>
                <BookingForm/>
             </div>

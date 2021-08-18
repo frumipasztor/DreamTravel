@@ -1,27 +1,54 @@
-import React,  { useState } from 'react';
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 const BookingForm = () => {
+  const [avaliableData, setAvaliableData] = useState([]);
 
-    const [inputs, setInputs] = useState({ name: '', phone: '', email: '', country: '', postCode: '', city: '', address: '' });
+  useEffect(() => {
+    const dataFetch = async () => {
+      await avaliableDataFetch();
+    };
+    dataFetch();
+  }, []);
 
-    const {name, phone, email, country, postCode, city, address} = inputs;
+  const avaliableDataFetch = async () => {
+    const result = await fetch("/api/travellimit");
+    const jsonData = await result.json();
+    console.log(jsonData);
+    setAvaliableData(jsonData);
+  };
 
-    const onChange = (e) => setInputs({ ...inputs, [e.target.name]: e.target.value });
+  const [inputs, setInputs] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    country: "",
+    postCode: "",
+    city: "",
+    address: "",
+    seat: "",
+  });
 
-    const onSubmit = async (e) => {
-      e.preventDefault();
+  const { name, phone, email, country, postCode, city, address, seat } = inputs;
 
-      let formData = {
-        name: name,
-        phone: phone,
-        email: email,
-        country: country,
-        postCode: postCode,
-        city: city,
-        address: address,
-      };
+  const onChange = (e) =>
+    setInputs({ ...inputs, [e.target.name]: e.target.value });
 
+  const onSubmit = async (e) => {
+  //  e.preventDefault();
+
+    let formData = {
+      name: name,
+      phone: phone,
+      email: email,
+      country: country,
+      postCode: postCode,
+      city: city,
+      address: address,
+      seat: seat,
+    };
+
+    if (seat <= avaliableData.avaliable) {
       await axios({
         method: "POST",
         url: "/api/invoicedata",
@@ -29,24 +56,79 @@ const BookingForm = () => {
         headers: {
           "Content-Type": "application/json",
         },
-      })
-        .then((response) => console.log(response.data))
-    } 
+      }).then((response) => console.log(response.data));
+    } else{
+      return(
+       alert("Sorry, not enough avaliable seat!")  
+      );
+    }
+  };
 
-    return (
-        <>
-                <form onSubmit={e => onSubmit(e)}>
-                  <input type="text" placeholder="Name" id="name" name="name" value={name} onChange={e => onChange(e)} />
-                  <input type="text" placeholder="Phone number" id="phone" name="phone" value={phone} onChange={e => onChange(e)} />
-                  <input type="email" placeholder="Email" id="email" name="email" value={email} onChange={e => onChange(e)}/>
-                  <input type="text" placeholder="Country" id="country" name="country" value={country} onChange={e => onChange(e)} />
-                  <input type="text" placeholder="Post Code" id="post_code" name="postCode" value={postCode} onChange={e => onChange(e)} />
-                  <input type="text" placeholder="City" id="city" name="city" value={city} onChange={e => onChange(e)}/>
-                  <input type="text" placeholder="Address" id="address" name="address" value={address} onChange={e => onChange(e)}/>
-                  <input type="submit" id="submit" value="Submit" />
-                </form>
-        </>
-    )
-}
+  return (
+    <>
+      <form onSubmit={(e) => onSubmit(e)}>
+        <input
+          type="text"
+          placeholder="Name"
+          name="name"
+          value={name}
+          onChange={(e) => onChange(e)}
+        />
+        <input
+          type="text"
+          placeholder="Phone number"
+          name="phone"
+          value={phone}
+          onChange={(e) => onChange(e)}
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          name="email"
+          value={email}
+          onChange={(e) => onChange(e)}
+        />
+        <input
+          type="text"
+          placeholder="Country"
+          name="country"
+          value={country}
+          onChange={(e) => onChange(e)}
+        />
+        <input
+          type="text"
+          placeholder="Post Code"
+          name="postCode"
+          value={postCode}
+          onChange={(e) => onChange(e)}
+        />
+        <input
+          type="text"
+          placeholder="City"
+          name="city"
+          value={city}
+          onChange={(e) => onChange(e)}
+        />
+        <input
+          type="text"
+          placeholder="Address"
+          name="address"
+          value={address}
+          onChange={(e) => onChange(e)}
+        />
+        <input
+          type="number"
+          placeholder="Seat"
+          min="1"
+          max={avaliableData.avaliable}
+          name="seat"
+          value={seat}
+          onChange={(e) => onChange(e)}
+        />
+        <input type="submit" id="submit" value="Submit" />
+      </form>
+    </>
+  );
+};
 
-export default BookingForm
+export default BookingForm;
