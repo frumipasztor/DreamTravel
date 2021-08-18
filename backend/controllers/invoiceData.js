@@ -1,17 +1,22 @@
 const invoiceData = (req, res) => {
-    console.log("kiscica")
-    
-    let costumer = {
-        name: req.body.name,
-        email: req.body.email,
-        phone: req.body.phone,
-        country: req.body.county,
-        postCode: req.body.postCode,
-        city: req.body.city,
-        address: req.body.address,
-      };
+  const Customer = require("../models/customer.model");
 
-      console.log(req.body)
+  let customer = {
+    name: req.body.name,
+    email: req.body.email,
+    phone: req.body.phone,
+    address:{
+    country: req.body.country,
+    post_code: req.body.postCode,
+    city: req.body.city,
+    address: req.body.address,
+  }
+  }; 
+
+  console.log(customer)
+
+ Customer.insertMany(customer);
+
 }
 
 module.exports = invoiceData;
