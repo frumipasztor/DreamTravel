@@ -1,0 +1,135 @@
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+//ipad pro
+@media screen and (max-width: 1024px) {
+  .Booking {
+    padding: 10px 0;
+    .booking-content {
+      width: 90%;
+      h1 {
+        font-size: 50px;
+        margin-bottom: 0;
+      }
+      form {
+        input {
+          width: 80%;
+          padding: 13px;
+          font-size: 22px;
+        }
+        input::placeholder {
+          font-size: 22px;
+        }
+
+        input[type="checkbox"] {
+          width: fit-content;
+        }
+        label {
+          font-size: 22px;
+          margin: 15px 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+}
+
+//ipad
+@media screen and (max-width: 768px) {
+  .Booking {
+    .booking-content {
+      h1 {
+        font-size: 40px;
+      }
+      form {
+        input {
+          width: 70%;
+          padding: 10px;
+          font-size: 20px;
+        }
+        input::placeholder {
+          font-size: 20px;
+        }
+
+        input[type="checkbox"] {
+          width: fit-content;
+        }
+        label {
+          font-size: 20px;
+          margin: 15px 0;
+        }
+      }
+    }
+  }
+}
+
+//Surface Duo
+@media screen and (max-width: 540px) {
+  .Booking {
+    .booking-content {
+      h1 {
+        font-size: 35px;
+      }
+      form {
+        input {
+          padding: 5px;
+          font-size: 16px;
+        }
+        input::placeholder {
+          font-size: 16px;
+        }
+
+        input[type="checkbox"] {
+          width: fit-content;
+        }
+        label {
+          font-size: 18px;
+          margin: 15px 0;
+          text-align: center;
+        }
+        input[type="submit"] {
+          padding: 2px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+//iPhone6/7/8 Plus
+@media screen and (max-width: 414px) {
+}
+
+//iphoneX{
+@media screen and (max-width: 375px) {
+}
+
+//iphone 5/SE
+//Galaxy fold
+
+@media screen and (max-width: 320px) {
+}
+
+//galaxy fold
+@media screen and (max-width: 280px) {
+  .Booking {
+    .booking-content {
+      h1 {
+        font-size: 35px;
+      }
+      form {
+        input {
+          width: 90%;
+        }
+      }
+    }
+  }
+}

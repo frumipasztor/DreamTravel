@@ -2,42 +2,41 @@ $green: #003529;
 $lightgreen: #028578;
 
 .sci {
-    position: absolute;
-    bottom: 40px;
-    right: 100px;
-    display: flex;
-    z-index: 300;
+  position: absolute;
+  bottom: 40px;
+  right: 100px;
+  display: flex;
+  z-index: 300;
 
-    li {
-      list-style: none;
-      margin: 5px;
-      padding: 0 6px;
-      background: #fff;
-      transition: 0.5s;
+  li {
+    list-style: none;
+    margin: 5px;
+    padding: 0 6px;
+    background: #fff;
+    transition: 0.5s;
 
-      a {
-        color: $lightgreen;
-        text-decoration: none;
-        display: inline-block;
-        letter-spacing: 2px;
-        font-weight: 500;
-        font-size: 12px;
-        text-transform: uppercase;
-        cursor: pointer;
-        text-decoration: none;
-        text-align: center;
-        width: 100%;
-      }
-     
+    a {
+      color: $lightgreen;
+      text-decoration: none;
+      display: inline-block;
+      letter-spacing: 2px;
+      font-weight: 500;
+      font-size: 12px;
+      text-transform: uppercase;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      width: 100%;
     }
-    li:hover {
-        background: $lightgreen;
-        transition: 0.5s;        
-        a {
-            color: #fff;
-            letter-spacing: 4px;
-            text-transform: lowercase;
-            transition: 0.5s;
-        }
-      }
   }
+  li:hover {
+    background: $lightgreen;
+    transition: 0.5s;
+    a {
+      color: #fff;
+      letter-spacing: 4px;
+      text-transform: lowercase;
+      transition: 0.5s;
+    }
+  }
+}

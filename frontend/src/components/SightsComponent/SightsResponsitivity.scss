@@ -1,0 +1,163 @@
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+//ipad pro
+@media screen and (max-width: 1024px) {
+  .Sights {
+    padding: 10px 0;
+    .sights-content {
+      width: 90%;
+      h1 {
+        font-size: 50px;
+      }
+      .sights-content-text {
+        width: 90%;
+        gap: 25px;
+
+        h3 {
+          font-size: 30px;
+        }
+
+        p {
+          font-size: 25px;
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+}
+
+//ipad
+@media screen and (max-width: 768px) {
+  .sci {
+    display: none;
+  }
+  .Sights {
+    top: 65%;
+    transform: translate(-50%, -55%);
+    .sights-content {
+      h1 {
+        font-size: 40px;
+      }
+      .return {
+        font-size: 20px !important;
+      }
+      .sights-content-text {
+        width: 100%;
+        flex-direction: column;
+
+        h3 {
+          font-size: 20px;
+        }
+
+        p {
+          font-size: 20px;
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+}
+
+//Surface Duo
+@media screen and (max-width: 540px) {
+  .Sights {
+    top: 75%;
+    transform: translate(-50%, -57%);
+
+    .sights-content {
+      h1 {
+        font-size: 35px;
+      }
+      .return {
+        font-size: 12px !important;
+      }
+      .sights-content-text {
+        h3 {
+          font-size: 18px;
+        }
+
+        p {
+          font-size: 14px;
+          margin: 5px 0;
+        }
+      }
+    }
+  }
+}
+
+//iPhone6/7/8 Plus
+@media screen and (max-width: 414px) {
+  .Sights {
+    top: 75%;
+    transform: translate(-50%, -65%);
+
+    .sights-content {
+      h1 {
+        font-size: 30px;
+      }
+      .return {
+        font-size: 10px !important;
+      }
+      .sights-content-text {
+        h3 {
+          font-size: 15px;
+        }
+
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+//iphoneX
+
+@media screen and (max-width: 375px) {
+  .Sights {
+    top: 40%;
+    transform: translate(-50%, -26%);
+  }
+}
+
+//iphone 5/SE
+//Galaxy fold
+
+@media screen and (max-width: 320px) {
+  .Sights {
+    top: 75%;
+    transform: translate(-50%, -55%);
+
+    .sights-content {
+      h1 {
+        font-size: 25px;
+      }
+      .sights-content-text {
+        h3 {
+          font-size: 12px;
+        }
+        p {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+//galaxy fold
+@media screen and (max-width: 280px) {
+  .Sights {
+    top: 75%;
+    transform: translate(-50%, -53%);
+  }
+}

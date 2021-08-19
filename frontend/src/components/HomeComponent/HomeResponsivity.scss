@@ -1,0 +1,110 @@
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+//ipad pro
+@media screen and (max-width: 1024px) {
+  .coreE {
+    header {
+      padding: 45px 10px;
+      a {
+        font-size: 40px;
+      }
+    }
+    .content {
+      h2 {
+        font-size: 180px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+}
+//ipad
+@media screen and (max-width: 768px) {
+  .coreE {
+    header {
+      a {
+        font-size: 35px;
+      }
+    }
+    .content {
+      h2 {
+        font-size: 110px;
+      }
+    }
+  }
+}
+//Surface Duo
+@media screen and (max-width: 540px) {
+  .coreE {
+    header {
+      a {
+        font-size: 25px;
+      }
+    }
+    .content {
+      h2 {
+        font-size: 80px;
+      }
+    }
+  }
+}
+
+//iPhone6/7/8 Plus
+@media screen and (max-width: 414px) {
+  .coreE {
+    header {
+      padding: 20px 15px;
+
+      a {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+//iphoneX{
+@media screen and (max-width: 375px) {
+  .coreE {
+    .content {
+      h2 {
+        font-size: 70px;
+      }
+    }
+  }
+}
+
+//iphone 5/SE
+//Galaxy fold
+
+@media screen and (max-width: 320px) {
+  .coreE {
+    .content {
+      h2 {
+        font-size: 60px;
+      }
+    }
+    header {
+      a {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+//galaxy fold
+@media screen and (max-width: 280px) {
+  .coreE {
+    .content {
+      h2 {
+        font-size: 55px;
+      }
+    }
+  }
+}

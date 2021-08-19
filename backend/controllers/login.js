@@ -15,7 +15,7 @@ const login = (req, res) => {
     code: code,
     client_id: CLIENT_ID,
     client_secret: CLIENT_SECRET,
-    redirect_uri: "http://localhost:3000/tour",
+    redirect_uri: "http://localhost:3000/booking",
     grant_type: "authorization_code",
   };
 

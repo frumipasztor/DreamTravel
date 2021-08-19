@@ -1,0 +1,164 @@
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+//ipad pro
+@media screen and (max-width: 1024px) {
+  .Blog {
+    padding: 10px 0;
+    .blog-content {
+      width: 100%;
+      h1 {
+        font-size: 50px;
+      }
+      .blog-posts {
+        flex-direction: column;
+        gap: 30px;
+
+        .BlogMini {
+          h2 {
+            font-size: 30px;
+          }
+          img {
+            width: 60%;
+          }
+          p {
+            font-size: 25px;
+          }
+          a {
+            font-size: 25px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+//ipad
+@media screen and (max-width: 768px) {
+  .Blog {
+    .blog-content {
+      h1 {
+        font-size: 40px;
+        margin-bottom: 5px;
+      }
+      .blog-posts {
+        gap: 15px;
+
+        .BlogMini {
+          h2 {
+            font-size: 25px;
+          }
+          img {
+            width: 50%;
+          }
+          p {
+            font-size: 20px;
+          }
+          a {
+            font-size: 20px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+//Surface Duo
+@media screen and (max-width: 540px) {
+  .Blog {
+    .blog-content {
+      h1 {
+        font-size: 35px;
+      }
+      .blog-posts {
+        gap: 10px;
+        width: 80%;
+
+        .BlogMini {
+          width: 100%;
+          h2 {
+            font-size: 20px;
+          }
+          img {
+            width: 25%;
+          }
+          p {
+            font-size: 14px;
+          }
+          a {
+            font-size: 14px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+//iPhone6/7/8 Plus
+@media screen and (max-width: 414px) {
+  .Blog {
+    .blog-content {
+      h1 {
+        font-size: 30px;
+      }
+      .blog-posts {
+        width: 80%;
+        .BlogMini {
+          h2 {
+            font-size: 17px;
+          }
+          p {
+            font-size: 12px;
+          }
+          a {
+            font-size: 12px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+//iphoneX
+@media screen and (max-width: 370px) {
+}
+
+//iphone 5/SE
+//Galaxy fold
+
+@media screen and (max-width: 320px) {
+  .Blog {
+    .blog-content {
+      h1 {
+        font-size: 25px;
+      }
+      .blog-posts {
+        gap: 15px;
+        .BlogMini {
+          h2 {
+            font-size: 15px;
+          }
+          img {
+            width: 40%;
+          }
+          p {
+            font-size: 10px;
+          }
+          .bloglink {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//galaxy fold
+@media screen and (max-width: 280px) {
+}

@@ -1,0 +1,133 @@
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+//ipad pro
+@media screen and (max-width: 1024px) {
+  .History {
+    padding: 10px 0;
+    .history-content {
+      width: 90%;
+
+      h1 {
+        font-size: 50px;
+      }
+      .return {
+        font-size: 25px !important;
+      }
+
+      .history-content-text {
+        width: 90%;
+
+        p {
+          font-size: 25px;
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+}
+
+//ipad
+@media screen and (max-width: 768px) {
+  .History {
+    .history-content {
+      h1 {
+        font-size: 40px;
+      }
+      .return {
+        font-size: 20px !important;
+      }
+
+      .history-content-text {
+        width: 100%;
+
+        p {
+          margin: 15px 0;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+//Surface Duo
+@media screen and (max-width: 540px) {
+  .History {
+    .history-content {
+      h1 {
+        font-size: 35px;
+      }
+      .return {
+        font-size: 12px !important;
+      }
+
+      .history-content-text {
+        p {
+          margin: 5px 0;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+//iPhone6/7/8 Plus
+@media screen and (max-width: 414px) {
+  .History {
+    .history-content {
+      h1 {
+        font-size: 30px;
+      }
+      .return {
+        font-size: 10px !important;
+      }
+
+      .history-content-text {
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+//iphoneX{
+@media screen and (max-width: 375px) {
+}
+
+//iphone 5/SE
+//Galaxy fold
+
+@media screen and (max-width: 320px) {
+  .History {
+    position: absolute;
+    top: 55% !important;
+    left: 50%;
+    transform: translate(-50%, -55%) !important;
+
+    .history-content {
+      h1 {
+        font-size: 25px;
+      }
+
+      .history-content-text {
+        p {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+//galaxy fold
+@media screen and (max-width: 280px) {
+}

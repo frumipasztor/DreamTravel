@@ -1,0 +1,71 @@
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+//ipad pro
+@media screen and (max-width: 1024px) {
+  .sci {
+    bottom: 40px;
+    right: 50px;
+    li {
+      a {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+}
+
+//ipad
+@media screen and (max-width: 768px) {
+  .sci {
+    right: 30px;
+    li {
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+//Surface Duo
+@media screen and (max-width: 540px) {
+  .sci {
+    bottom: 20px;
+    right: 20px;
+    li {
+      padding: 0 3px;
+      a {
+        font-size: 11px;
+      }
+    }
+  }
+}
+
+//iPhone6/7/8 Plus
+@media screen and (max-width: 414px) {
+}
+
+//iphoneX{
+@media screen and (max-width: 375px) {
+}
+
+//iphone 5/SE
+//Galaxy fold
+
+@media screen and (max-width: 320px) {
+  .sci {
+    display: none;
+  }
+}
+
+//galaxy fold
+@media screen and (max-width: 280px) {
+}

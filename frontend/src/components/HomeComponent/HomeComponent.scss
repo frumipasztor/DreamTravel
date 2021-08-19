@@ -7,6 +7,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 .coreE {
   position: relative;
   width: 100%;
@@ -15,7 +16,7 @@
   align-items: center;
   overflow: hidden;
 
-  header{
+  header {
     position: absolute;
     top: 0;
     left: 0;
@@ -26,30 +27,30 @@
     justify-content: space-between;
     align-items: center;
 
-  a{    
-    position: relative;
-    font-size: 2em;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-decoration: none;
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
-    background:none;
+    a {
+      position: relative;
+      font-size: 2em;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-decoration: none;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+      background: none;
+    }
+    a:hover {
+      position: relative;
+      font-size: 2em;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-decoration: none;
+      text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+      background: none;
+    }
   }
-  a:hover{
-    position: relative;
-    font-size: 2em;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-decoration: none;
-    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
-    background:none;
-  }
-}
-.glassHome {
+  .glassHome {
     position: absolute;
     top: 0;
     left: 0;
@@ -72,32 +73,33 @@
     transition-delay: 1s;
 
     h2 {
-        position: relative;
-        color: #fff;
-        font-family: "Dancing Script", cursive;
-        font-size: 10vw;
-        line-height: 0.55em;
-        text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-        span {
-          font-size: 0.2em;
-          font-weight: 300;
-          letter-spacing: 5px;
-          background: #fff;
-          color: #111;
-          padding: 0 10px;
-          text-shadow: 0 5px 5px rgba(0, 0, 0, 0);
-          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-          text-transform: uppercase;
-        }
+      position: relative;
+      color: #fff;
+      font-family: "Dancing Script", cursive;
+      font-size: 10vw;
+      line-height: 0.55em;
+      text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+      span {
+        font-size: 0.2em;
+        font-weight: 300;
+        letter-spacing: 5px;
+        background: #fff;
+        color: #111;
+        padding: 0 10px;
+        text-shadow: 0 5px 5px rgba(0, 0, 0, 0);
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+        text-transform: uppercase;
       }
-}
+    }
+  }
 
   video {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     object-fit: cover;
+    overflow: hidden;
   }
 }

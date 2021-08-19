@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./AboutComponent.scss";
+import "./AboutResponsitivity.scss";
 
 const AboutComponent = () => {
-
   const [data, setData] = useState([]);
   useEffect(() => {
     const dataFetch = async () => {
@@ -14,21 +14,17 @@ const AboutComponent = () => {
   const fetchData = async () => {
     const result = await fetch("/api/about");
     const jsonData = await result.json();
-    console.log(jsonData);
+    // console.log(jsonData);
     setData(jsonData);
   };
 
   return (
     <div className="About">
-        <div className="about-content">
-      <h1>About us</h1>
-      <div className="about-content-text">
-        <p>
-         {data.pharagraph1}
-        </p>
-        <p>
-          {data.pharagraph2}
-        </p>
+      <div className="about-content">
+        <h1>About us</h1>
+        <div className="about-content-text">
+          <p>{data.pharagraph1}</p>
+          <p>{data.pharagraph2}</p>
         </div>
       </div>
     </div>

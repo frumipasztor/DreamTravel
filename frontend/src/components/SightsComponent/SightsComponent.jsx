@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./SightsComponent.scss";
+import "./SightsResponsitivity.scss";
 import { Link } from "react-router-dom";
 
 const SightsComponent = () => {
@@ -14,7 +15,7 @@ const SightsComponent = () => {
   const fetchData = async () => {
     const result = await fetch("/api/sights");
     const jsonData = await result.json();
-    console.log(jsonData);
+    //    console.log(jsonData);
     setData(jsonData);
   };
 

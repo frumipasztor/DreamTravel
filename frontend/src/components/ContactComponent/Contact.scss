@@ -5,13 +5,6 @@ $curlyfont: "Dancing Script", cursive;
 $green: #003529;
 $lightgreen: #028578;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
 .Contact {
   position: absolute;
   top: 40%;
@@ -19,12 +12,12 @@ $lightgreen: #028578;
   transform: translate(-50%, -40%);
   z-index: 50;
   width: 100%;
-  background: rgba(255,255,255, 0.3);
+  background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(15px);
   box-shadow: 10px 0 15px rgba(0, 0, 0, 0.1);
   padding: 30px 0;
 
-  .contact-content{
+  .contact-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -32,9 +25,8 @@ $lightgreen: #028578;
     width: 50%;
     margin: 0 auto;
     text-align: left;
-    width: fit-content;
 
-    h1{
+    h1 {
       color: #003529;
       font-size: 3em;
       text-transform: uppercase;
@@ -42,23 +34,23 @@ $lightgreen: #028578;
       letter-spacing: 2px;
       text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
       margin-bottom: 20px;
-      
     }
-    h2{
+    h2 {
       color: #028578;
       text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
       font-size: 2em;
     }
-    h3{
+    h3 {
       margin: 0 0 20px;
       color: $green;
       font-size: 20px;
     }
-    .contact-cons{
+    .contact-cons {
       color: black;
-      p{
+      p {
         margin: 10px 0 0 0;
         font-size: 18px;
       }
     }
-}}
+  }
+}

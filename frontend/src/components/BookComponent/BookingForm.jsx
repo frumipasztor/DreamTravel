@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import './BookingForm.scss';
+import "./BookingForm.scss";
 
 const BookingForm = () => {
   const [avaliableData, setAvaliableData] = useState([]);
@@ -15,7 +15,7 @@ const BookingForm = () => {
   const avaliableDataFetch = async () => {
     const result = await fetch("/api/travellimit");
     const jsonData = await result.json();
-    console.log(jsonData);
+  //  console.log(jsonData);
     setAvaliableData(jsonData);
   };
 
@@ -36,7 +36,7 @@ const BookingForm = () => {
     setInputs({ ...inputs, [e.target.name]: e.target.value });
 
   const onSubmit = async (e) => {
-  //  e.preventDefault();
+    //  e.preventDefault();
 
     let formData = {
       name: name,
@@ -58,10 +58,8 @@ const BookingForm = () => {
           "Content-Type": "application/json",
         },
       }).then((response) => console.log(response.data));
-    } else{
-      return(
-       alert("Sorry, not enough avaliable seat!")  
-      );
+    } else {
+      return alert("Sorry, not enough avaliable seat!");
     }
   };
 
@@ -133,8 +131,17 @@ const BookingForm = () => {
           value={seat}
           required
           onChange={(e) => onChange(e)}
-        /><label htmlFor="tos">
-        <input type="checkbox" required name="tos" />I have read and agree to the <a href="http://localhost:5000/pdf/TermsOfServices.pdf" className="tos">Terms of Service.</a></label>
+        />
+        <label htmlFor="tos">
+          <input type="checkbox" required name="tos" />I have read and agree to
+          the{" "}
+          <a
+            href="http://localhost:5000/pdf/TermsOfServices.pdf"
+            className="tos"
+          >
+            Terms of Service.
+          </a>
+        </label>
         <input type="submit" id="submit" value="Submit" />
       </form>
     </div>
