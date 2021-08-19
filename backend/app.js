@@ -28,6 +28,11 @@ const corsOptions = {
 };
 
 app.use("/api", Route);
+
+app.get("/", async (req, res) => {
+    res.json({message: "pass!"});
+})
+
 app.use(allowCors);
 app.use(cors(corsOptions));
 
