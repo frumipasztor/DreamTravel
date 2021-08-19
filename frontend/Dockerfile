@@ -1,8 +1,13 @@
-#Létrehozok egy szervert
-FROM nginx:latest
+FROM node:14
 
-#Copy, ha react akkor ./ frontend vagy a mappa amibe a cuccaim vannak
-COPY /frontend /usr/share/nginx/html
+WORKDIR /usr/src/app
 
-#Port
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
 EXPOSE 3000
+
+CMD ["npm", "start"]
