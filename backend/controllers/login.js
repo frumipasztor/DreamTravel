@@ -15,7 +15,7 @@ const login = (req, res) => {
     code: code,
     client_id: CLIENT_ID,
     client_secret: CLIENT_SECRET,
-    redirect_uri: "http://localhost:3000/booking",
+    redirect_uri: "http://localhost:3000/tour",
     grant_type: "authorization_code",
   };
 
@@ -61,7 +61,6 @@ const login = (req, res) => {
         },
         "MySecret"
       );
-      console.log("vodka: " + decoded);
 
       res.header("auth-token", token).json( myToken);
     })

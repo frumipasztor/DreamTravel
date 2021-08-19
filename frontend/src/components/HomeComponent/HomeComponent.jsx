@@ -10,7 +10,7 @@ const HomeComponent = () => {
       </header>
       <div className="glassHome"></div>
       <div className="content"><h2>Happiness...<br></br><span>Crystal clear water</span></h2></div>
-      <video src="./water.mp4" autoPlay muted loop></video>
+      <video src="./water.mov" autoPlay muted loop></video>
     </div>
   );
 }

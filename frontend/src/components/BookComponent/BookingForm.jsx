@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import './BookingForm.scss';
 
 const BookingForm = () => {
   const [avaliableData, setAvaliableData] = useState([]);
@@ -65,7 +66,7 @@ const BookingForm = () => {
   };
 
   return (
-    <>
+    <div className="BookingForm">
       <form onSubmit={(e) => onSubmit(e)}>
         <input
           type="text"
@@ -132,11 +133,11 @@ const BookingForm = () => {
           value={seat}
           required
           onChange={(e) => onChange(e)}
-        />
-        <input type="checkbox" required name="tos" /><label htmlFor="tos">I have read and agree to the <a href="http://localhost:5000/pdf/TermsOfServices.pdf" className="tos">Terms of Service.</a></label>
+        /><label htmlFor="tos">
+        <input type="checkbox" required name="tos" />I have read and agree to the <a href="http://localhost:5000/pdf/TermsOfServices.pdf" className="tos">Terms of Service.</a></label>
         <input type="submit" id="submit" value="Submit" />
       </form>
-    </>
+    </div>
   );
 };
 

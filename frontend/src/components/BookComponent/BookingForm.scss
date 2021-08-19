@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+
+$curlyfont: "Dancing Script", cursive;
+$green: #003529;
+$lightgreen: #028578;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.BookingForm {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0 10px;
+
+    input {
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid $green;
+      width: 300px;
+      padding: 5px;
+      transition: 1s;
+    }
+    input::placeholder {
+      color: $green;
+      text-align: center;
+      font-size: 1em;
+    }
+    input:active,
+    input:focus,
+    input:hover {
+      border-bottom: 3px solid $green;
+      outline: none;
+      transition: 0.2s;
+      cursor: pointer;
+    }
+    input[type="checkbox"] {
+        display: inline-block;
+        width: fit-content;
+        margin-right: 10px;
+    }
+    label{
+        margin-top: 10px; 
+        a{
+            font-size: 1em;
+            background: transparent,
+        }
+    }
+    input[type="submit"] {
+        background: white;
+        border: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: $lightgreen;
+        font-weight: 500;
+        cursor: pointer;
+        transition:0s;
+    }
+    input[type="submit"]:hover {
+        background: $lightgreen;
+        text-transform: lowercase;
+        letter-spacing: 5px;
+        color: white;
+        cursor: pointer;
+    }
+  }
+}

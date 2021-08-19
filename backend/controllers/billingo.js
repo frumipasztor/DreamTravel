@@ -8,7 +8,6 @@ const billingo = async (customer, travel) => {
     apiKey: process.env.BILLINGO_API,
   });
 
-  // console.log(travelFrom);
 
   let date = new Date(travel.duration_from);
   let dueDate = new Date(date.setDate(date.getDate() - 10));
