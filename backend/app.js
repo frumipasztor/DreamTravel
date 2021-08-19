@@ -2,11 +2,14 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 
+app.use(cors());
+
 //Import routes
 const Route = require("./routes/Route");
 
 //Middlewares
 app.use(express.json());
+app.use('/pdf', express.static(__dirname + '/pdf'));
 
 //Route Middleware
 
@@ -25,7 +28,6 @@ const corsOptions = {
 };
 
 app.use("/api", Route);
-app.use(cors());
 app.use(allowCors);
 app.use(cors(corsOptions));
 

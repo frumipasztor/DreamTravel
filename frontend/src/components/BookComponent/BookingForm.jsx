@@ -72,6 +72,7 @@ const BookingForm = () => {
           placeholder="Name"
           name="name"
           value={name}
+          required
           onChange={(e) => onChange(e)}
         />
         <input
@@ -79,6 +80,7 @@ const BookingForm = () => {
           placeholder="Phone number"
           name="phone"
           value={phone}
+          required
           onChange={(e) => onChange(e)}
         />
         <input
@@ -86,6 +88,7 @@ const BookingForm = () => {
           placeholder="Email"
           name="email"
           value={email}
+          required
           onChange={(e) => onChange(e)}
         />
         <input
@@ -93,6 +96,7 @@ const BookingForm = () => {
           placeholder="Country"
           name="country"
           value={country}
+          required
           onChange={(e) => onChange(e)}
         />
         <input
@@ -100,6 +104,7 @@ const BookingForm = () => {
           placeholder="Post Code"
           name="postCode"
           value={postCode}
+          required
           onChange={(e) => onChange(e)}
         />
         <input
@@ -107,6 +112,7 @@ const BookingForm = () => {
           placeholder="City"
           name="city"
           value={city}
+          required
           onChange={(e) => onChange(e)}
         />
         <input
@@ -114,6 +120,7 @@ const BookingForm = () => {
           placeholder="Address"
           name="address"
           value={address}
+          required
           onChange={(e) => onChange(e)}
         />
         <input
@@ -123,8 +130,10 @@ const BookingForm = () => {
           max={avaliableData.avaliable}
           name="seat"
           value={seat}
+          required
           onChange={(e) => onChange(e)}
         />
+        <input type="checkbox" required name="tos" /><label htmlFor="tos">I have read and agree to the <a href="http://localhost:5000/pdf/TermsOfServices.pdf" className="tos">Terms of Service.</a></label>
         <input type="submit" id="submit" value="Submit" />
       </form>
     </>

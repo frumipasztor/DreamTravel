@@ -6,6 +6,9 @@ import ContactPage from "./pages/ContactPage";
 import Tour from "./pages/Tour";
 import NavBar from "./components/NavBar/NavBar";
 import BookingPage from "./pages/Booking";
+import BlogPage from "./pages/BlogPage";
+import HistoryPage from "./pages/History";
+import SightsPage from "./pages/Sights";
 
 const App = () => {
   return (
@@ -16,8 +19,11 @@ const App = () => {
           <Route path="/" exact component={Home} />
           <Route path="/about"  component={About} />
           <Route path="/contact"  component={ContactPage} />
+          <Route path="/blog"  component={BlogPage} />
           <Route path="/tour"  component={Tour} />
           <Route path="/booking"  component={BookingPage} />
+          <Route path="/history" component={HistoryPage} />
+          <Route path="/sights"  component={SightsPage} />
         </Switch>
       </Router>
     </>

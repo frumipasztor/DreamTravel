@@ -1,6 +1,7 @@
 const invoiceData = async (req, res) => {
   const Customer = require("../models/customer.model");
   const Travel = require("../models/travel.model");
+  const billingo = require("./billingo.js");
 
   let travel = await Travel.findOne();
 
@@ -21,14 +22,14 @@ const invoiceData = async (req, res) => {
       address: req.body.address,
     },
   };
-
-  console.log(avaliable);
+ // console.log(avaliable);
 
   if (customer.seat <= avaliable) {
-    Customer.insertMany(customer);
+    await Customer.insertMany(customer);
     let newCurrent = parseInt(travel.current) + parseInt(customer.seat);
     travel.current = newCurrent;
-    travel.save();
+    await billingo(customer, travel);
+    await travel.save();
   }
 };
 
