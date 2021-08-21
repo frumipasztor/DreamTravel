@@ -1,11 +1,12 @@
-swagger: "2.0"
+openapi: "3.0.1"
 info:
   description: "Get information about the DreamTravel API"
   version: "1.0.0"
   title: "DREAMTRAVEL API"
   contact:
     email: "frumipasztor@gmail.com"
-host: "localhost:5000"
+servers:
+- url: "http://localhost:5000"
 tags:
 - name: "api"
   description: "Every api based endpoint"
@@ -20,11 +21,14 @@ paths:
         summary: "Gets travel details data from database"
         description: "Gets travel details data from database."
         operationId: "travelDetails"
-        produces:
-        - "application/json"
         responses:
-          "200":
+          200:
             description: "OK"
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/Travel'
+                  
     /api/travellimit:
       get:
         tags:
@@ -32,13 +36,16 @@ paths:
         summary: "Checks currently how many space is avaliable"
         description: "Checks currently how many space is avaliable."
         operationId: "travelLimit"
-        produces:
-        - "application/json"
         responses:
-          "200":
+          200:
             description: "OK"
-          "400":
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/Travel'
+          400:
             description: "Sorry not enough avaliable space"
+            
     /api/contact:
       get:
         tags:
@@ -46,11 +53,14 @@ paths:
         summary: "Gets contact data from database"
         description: "Gets contact details data from database."
         operationId: "contact"
-        produces:
-        - "application/json"
         responses:
-          "200":
+          200:
             description: "OK"
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/Contact'
+                    
     /api/about:
       get:
         tags:
@@ -58,11 +68,13 @@ paths:
         summary: "Gets about data from database"
         description: "Gets about data from database."
         operationId: "about"
-        produces:
-        - "application/json"
         responses:
-          "200":
+          200:
             description: "OK"
+            content:
+             application/json:
+                  schema:
+                    $ref: '#/components/schemas/About'
     /api/blog:
       get:
         tags:
@@ -70,11 +82,13 @@ paths:
         summary: "Gets blog data from database"
         description: "Gets blog data from database."
         operationId: "blog"
-        produces:
-        - "application/json"
         responses:
-          "200":
+          200:
             description: "OK"
+            content:
+              application/json:
+                  schema:
+                    $ref: '#/components/schemas/Blog'
     /api/history:
       get:
         tags:
@@ -82,11 +96,13 @@ paths:
         summary: "Gets history data from database"
         description: "Gets history data from database."
         operationId: "history"
-        produces:
-        - "application/json"
         responses:
-          "200":
+          200:
             description: "OK"
+            content:
+              application/json:
+                  schema:
+                    $ref: '#/components/schemas/History'
     /api/sights:
       get:
         tags:
@@ -94,11 +110,13 @@ paths:
         summary: "Gets sights data from database"
         description: "Gets sights data from database."
         operationId: "sights"
-        produces:
-        - "application/json"
         responses:
-          "200":
+          200:
             description: "OK"
+            content:
+              application/json:
+                  schema:
+                    $ref: '#/components/schemas/Sights'
     /api/login:
       post:
         tags:
@@ -106,12 +124,10 @@ paths:
         summary: "Google authentication"
         description: "Sets token to the users."
         operationId: "setTokenToUsers"
-        produces:
-        - "application/json"
         responses:
-          "200":
+          200:
             description: "successful login"
-          "400":
+          400:
             description: "Token faliure"
     /api/invoicedata:
       post:
@@ -120,8 +136,6 @@ paths:
         summary: "Checking transactions"
         description: "Getting the customers data, then check if there is enough seat to proceed the transaction, then sends the data to the billingo, creates the bill, save the customer, and the bill into two different mongodb database."
         operationId: "invoiceData"
-        produces:
-        - "application/json"
         responses:
           "200":
             description: "successful transaction"
@@ -134,14 +148,372 @@ paths:
         summary: "Gets data from the server"
         description: "Gets data from the server"
         operationId: "pdf"
-        parameters:
-        - name: file name
-          in: query
-          description: Gives back the requested file
-          required: true
-          type: string
-        produces:
-        - "application/json"
         responses:
           "200":
             description: "successful request"
+components:
+  schemas:
+    Travel:
+      type: object
+      properties:
+        from:
+          type: string
+        to:
+          type: string
+        duration_from:
+          type: string
+        duration_to:
+          type: string
+        summary:
+          type: string
+        price:
+          type: string
+        limit:
+          type: integer
+          format: int32
+        current:
+          type: integer
+          format: int32
+    Contact:
+      type: object
+      properties:
+        tel:
+          type: string
+        open:
+          type: string
+        email:
+          type: string
+    About:
+      type: object
+      properties:
+        pharagraph1:
+          type: string
+        pharagraph2:
+          type: string
+    Blog:
+      type: object
+      properties:
+        title:
+          type: string
+        summary:
+          type: string
+        path:
+          type: string
+    History:
+      type: object
+      properties:
+        title:
+          type: string
+        img:
+          type: string
+        firstp:
+          type: string
+        secondp:
+          type: string
+        thirdp:
+          type: string
+        fourthp:
+          type: string
+    Sights:
+      type: object
+      properties:
+        title:
+          type: string
+        img:
+          type: string
+        firstptitle:
+          type: string
+        firstp:
+          type: string
+        secondptitle:
+          type: string
+        secondp:
+          type: string
+        thirdptitle:
+          type: string
+        thirdp:
+          type: string
+        fourthptitle:
+          type: string
+        fourthp:
+          type: string
+    User:
+      type: object
+      properties:
+        sub:
+          type: string
+        given_name:
+          type: string
+        email:
+          type: string
+        name:
+          type: string
+        picture:
+          type: string
+    Customer:
+      type: object
+      properties:
+        name:
+          type: string
+        phone:
+          type: string
+        email:
+          type: string
+        seat:
+          type: integer
+          format: int32
+        address:
+          type: object
+          properties:
+            country:
+              type: string
+            post_code:
+              type: string
+            city:
+              type: string
+            address:
+              type: string
+    Invoice:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int32
+        invoice_number:
+          type: string
+        type:
+          type: string
+        cancelled:
+          type: boolean
+        block_id:
+          type: integer
+          format: int32
+        payment_status:
+          type: string
+        payment_method:
+          type: string
+        gross_total:
+          type: integer
+          format: int32
+        currency:
+          type: string
+        conversation_rate:
+          type: integer
+          format: int32
+        invoice_date:
+          type: string
+        fulfillment_date:
+          type: string
+        due_date:
+          type: string
+        paid_date:
+          type: string
+        organization:
+          type: object
+          properties:
+            name:
+              type: string
+            tax_number:
+              type: string
+            bank_account:
+              type: object
+              properties:
+                name:
+                  type: string
+                account_number:
+                  type: string
+                account_number_iban:
+                  type: string
+                swift:
+                  type: string
+            address:
+              type: object
+              properties:
+                country_code:
+                  type: string
+                post_code:
+                  type: string
+                city:
+                  type: string
+                address:
+                  type: string
+            small_taxpayer:
+              type: boolean
+            ev_number:
+              type: string
+            eu_tax_number:
+              type: string
+            cash_settled:
+              type: boolean
+        partner:
+          type: object
+          properties:
+            id:
+              type: integer
+              format: int32
+            name:
+              type: string
+            address:
+              type: object
+              properties:
+                country_code:
+                  type: string
+                post_code:
+                  type: string
+                city:
+                  type: string
+                address:
+                  type: string
+            emails:
+              type: array
+              items: 
+                type: string
+            taxcode:
+              type: string
+            iban:
+              type: string
+            swift:
+              type: string
+            account_number:
+              type: string
+            phone:
+              type: string
+            tax_type:
+              type: string
+            group_member_tax_number:
+              type: string
+        document_partner:
+          type: object
+          properties:
+            id:
+              type: integer
+              format: int32
+            name:
+              type: string
+            address:
+              type: object
+              properties:
+                country_code:
+                  type: string
+                post_code:
+                  type: string
+                city:
+                  type: string
+                address:
+                  type: string
+            emails:
+              type: array
+              items: 
+                 type: string
+            taxcode:
+              type: string
+            iban:
+              type: string
+            swift:
+              type: string
+            account_number:
+              type: string
+            phone:
+              type: string
+            tax_type:
+              type: string
+        electronic:
+          type: boolean
+        comment:
+          type: string
+        tags:
+          type: array
+          items:
+            type: string
+        notification_status:
+          type: string
+        language:
+          type: string
+        items:
+          type: object
+          properties:
+            product_id:
+              type: integer
+              format: int32
+            name:
+              type: string
+            net_unit_amount:
+              type: integer
+              format: int32
+            quantity:
+              type: integer
+              format: int32
+            unit:
+              type: string
+            net_amount:
+              type: integer
+              format: int32
+            gross_amount:
+              type: integer
+              format: int32
+            vat:
+              type: string
+            vat_amount:
+              type: integer
+              format: int32
+        summary:
+          type: object
+          properties:
+            net_amount:
+              type: integer
+              format: int32
+            net_amount_local:
+              type: integer
+              format: int32
+            gross_abount_local:
+              type: integer
+              format: int32
+            vat_amount:
+              type: integer
+              format: int32
+            vat_amount_local:
+              type: integer
+              format: int32
+            vat_rate_summary:
+              type: object
+              properties:
+                vat_name:
+                  type: string
+                vat_percentage:
+                 type: integer
+                 format: int32
+                vat_rate_net_amount:
+                  type: integer
+                  format: int32
+                vat_rate_vat_amount:
+                 type: integer
+                 format: int32
+                vat_rate_vat_amount_local:
+                  type: integer
+                  format: int32
+                vat_rate_gross_amount:
+                  type: integer
+                  format: int32
+        settings:
+          type: object
+          properties:
+            mediated_service:
+              type: boolean
+            without_financial_fulfillment:
+              type: boolean
+            online_payment:
+              type: string
+            round:
+              type: string
+            no_send_onlineszamla_vy_user:
+              type: boolean
+            order_number:
+              type: string
+            instant_payment:
+              type: boolean
+        related_documents:
+         type: array
+         items: 
+           type: string
+        online_szamla_status:
+         type: string
