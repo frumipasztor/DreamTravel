@@ -30,7 +30,7 @@ const login = (req, res) => {
     .then((data) => {
       const token = data.id_token;
       const decoded = jwt_decode(token);
-      console.log(decoded);
+      //console.log(decoded);
 
       if (!decoded) {
         return res.status(400).json("token faliure");
