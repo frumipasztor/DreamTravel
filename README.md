@@ -18,6 +18,8 @@ To run the app you will need to create your .env file and use your codes in it. 
 ## Filling the Schemas in MongoDB
 
     In order to work and get some content to the frontend, you need to make the database in mongoDB. I was creating the content there so you need to upload them too.
+    
+    !! No need to create for the customer.model, invoice.model, and the user.model. these are filling themselfs. 
 
 ## Run the Backend
 
