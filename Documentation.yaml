@@ -1,0 +1,147 @@
+swagger: "2.0"
+info:
+  description: "Get information about the DreamTravel API"
+  version: "1.0.0"
+  title: "DREAMTRAVEL API"
+  contact:
+    email: "frumipasztor@gmail.com"
+host: "localhost:5000"
+tags:
+- name: "api"
+  description: "Every api based endpoint"
+- name: "app"
+  description: "App based endpoint"
+
+paths:
+    /api/traveldetails:
+      get:
+        tags:
+        - "api"
+        summary: "Gets travel details data from database"
+        description: "Gets travel details data from database."
+        operationId: "travelDetails"
+        produces:
+        - "application/json"
+        responses:
+          "200":
+            description: "OK"
+    /api/travellimit:
+      get:
+        tags:
+        - "api"
+        summary: "Checks currently how many space is avaliable"
+        description: "Checks currently how many space is avaliable."
+        operationId: "travelLimit"
+        produces:
+        - "application/json"
+        responses:
+          "200":
+            description: "OK"
+          "400":
+            description: "Sorry not enough avaliable space"
+    /api/contact:
+      get:
+        tags:
+        - "api"
+        summary: "Gets contact data from database"
+        description: "Gets contact details data from database."
+        operationId: "contact"
+        produces:
+        - "application/json"
+        responses:
+          "200":
+            description: "OK"
+    /api/about:
+      get:
+        tags:
+        - "api"
+        summary: "Gets about data from database"
+        description: "Gets about data from database."
+        operationId: "about"
+        produces:
+        - "application/json"
+        responses:
+          "200":
+            description: "OK"
+    /api/blog:
+      get:
+        tags:
+        - "api"
+        summary: "Gets blog data from database"
+        description: "Gets blog data from database."
+        operationId: "blog"
+        produces:
+        - "application/json"
+        responses:
+          "200":
+            description: "OK"
+    /api/history:
+      get:
+        tags:
+        - "api"
+        summary: "Gets history data from database"
+        description: "Gets history data from database."
+        operationId: "history"
+        produces:
+        - "application/json"
+        responses:
+          "200":
+            description: "OK"
+    /api/sights:
+      get:
+        tags:
+        - "api"
+        summary: "Gets sights data from database"
+        description: "Gets sights data from database."
+        operationId: "sights"
+        produces:
+        - "application/json"
+        responses:
+          "200":
+            description: "OK"
+    /api/login:
+      post:
+        tags:
+        - "api"
+        summary: "Google authentication"
+        description: "Sets token to the users."
+        operationId: "setTokenToUsers"
+        produces:
+        - "application/json"
+        responses:
+          "200":
+            description: "successful login"
+          "400":
+            description: "Token faliure"
+    /api/invoicedata:
+      post:
+        tags:
+        - "api"
+        summary: "Checking transactions"
+        description: "Getting the customers data, then check if there is enough seat to proceed the transaction, then sends the data to the billingo, creates the bill, save the customer, and the bill into two different mongodb database."
+        operationId: "invoiceData"
+        produces:
+        - "application/json"
+        responses:
+          "200":
+            description: "successful transaction"
+          "400":
+            description: "Sorry not enough avaliable space"
+    /pdf:
+      get:
+        tags:
+        - "app"
+        summary: "Gets data from the server"
+        description: "Gets data from the server"
+        operationId: "pdf"
+        parameters:
+        - name: file name
+          in: query
+          description: Gives back the requested file
+          required: true
+          type: string
+        produces:
+        - "application/json"
+        responses:
+          "200":
+            description: "successful request"

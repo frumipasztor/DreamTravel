@@ -6,6 +6,7 @@ const travelSchema = new mongoose.Schema({
   duration_from: { type: String },
   duration_to: { type: String },
   summary: { type: String },
+  price: {type: String },
   limit: { type: Number },
   current: { type: Number },
 });

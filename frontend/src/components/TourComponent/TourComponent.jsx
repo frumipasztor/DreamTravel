@@ -5,6 +5,7 @@ import * as GiIcons from "react-icons/gi";
 import * as FiIcons from "react-icons/fi";
 import * as BiIcons from "react-icons/bi";
 import * as BsIcons from "react-icons/bs";
+import * as MdIcons from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const TourComponent = () => {
@@ -55,6 +56,9 @@ const TourComponent = () => {
             </p>
             <p>
               <BiIcons.BiMapPin /> From {data.from}
+            </p>
+            <p>
+              <MdIcons.MdAttachMoney/> {data.price} / head
             </p>
             <p>
               <BsIcons.BsPersonFill /> {data.limit} Capacity
