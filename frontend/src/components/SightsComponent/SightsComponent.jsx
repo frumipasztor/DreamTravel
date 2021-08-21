@@ -24,7 +24,7 @@ const SightsComponent = () => {
       <div className="sights-content">
         <h1>{data.title}</h1>
         <Link to="/blog" className="return">
-          Return
+          Vissza
         </Link>
 
         <div className="sights-content-text">

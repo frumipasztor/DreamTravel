@@ -19,13 +19,13 @@ const NavBar = () => {
           className={!sideBar ? "menu-bars" : "menu-bars active"}
           onClick={showSideBar}
         >
-          Menu <FaIcons.FaBars />
+          Menü <FaIcons.FaBars />
         </Link>
       </div>
       <nav className={sideBar ? "nav-menu active" : "nav-menu"}>
         <div className="navbar-toggle">
           <Link to="#" className="menu-bars" onClick={showSideBar}>
-            Close <AiIcons.AiOutlineClose />
+            Bezárás <AiIcons.AiOutlineClose />
           </Link>
         </div>
         <div className="menu-points">

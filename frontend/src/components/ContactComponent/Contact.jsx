@@ -24,10 +24,10 @@ const Contact = () => {
   return (
     <div className="Contact">
       <div className="contact-content">
-        <h1>Contact us</h1>
+        <h1>Elérhetőségünk</h1>
         <div className="contact-text">
-          <h2>Need help?</h2>
-          <h3>Contact our dedicated Support Team</h3>
+          <h2>Segítségre van szükséged?</h2>
+          <h3>Vedd fel a kapcsolatot az ügyfélszolgálatunkkal</h3>
           <div className="contact-cons">
             <p>
               <AiIcons.AiFillPhone /> {data.tel}{" "}

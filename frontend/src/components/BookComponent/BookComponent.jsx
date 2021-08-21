@@ -42,7 +42,7 @@ const BookComponent = () => {
   return (
     <div className="Booking">
       <div className="booking-content">
-        <h1>Book now!</h1>
+        <h1>Foglalás</h1>
         <BookingForm />
       </div>
     </div>

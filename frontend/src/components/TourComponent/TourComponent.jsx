@@ -41,13 +41,13 @@ const TourComponent = () => {
   return (
     <div className="Tour">
       <div className="tour-content">
-        <h1>Tour info</h1>
+        <h1>Utazás</h1>
         <div className="tour-flex">
           <div className="tour-left">
             <p>{data.summary}</p>
           </div>
           <div className="tour-right">
-            <h2>Next tour</h2>
+            <h2>Következő</h2>
             <p>
               <GiIcons.GiCommercialAirplane /> {data.to}
             </p>
@@ -55,16 +55,16 @@ const TourComponent = () => {
               <FiIcons.FiCalendar /> {data.duration_from} - {data.duration_to}{" "}
             </p>
             <p>
-              <BiIcons.BiMapPin /> From {data.from}
+              <BiIcons.BiMapPin /> {data.from}
             </p>
             <p>
-              <MdIcons.MdAttachMoney/> {data.price} / head
+              <MdIcons.MdAttachMoney/> {data.price} /fő
             </p>
             <p>
-              <BsIcons.BsPersonFill /> {data.limit} Capacity
+              <BsIcons.BsPersonFill /> {data.limit} fő
             </p>
             <p className="avaliable">
-              <BsIcons.BsPersonCheckFill /> {avaliableData.avaliable} Avaliable{" "}
+              <BsIcons.BsPersonCheckFill /> {avaliableData.avaliable} szabad hely
             </p>
           </div>
         </div>
@@ -72,12 +72,12 @@ const TourComponent = () => {
       {!localStorage.getItem("myToken") ? (
         <div className="login">
           <div className="button">
-            <button onClick={loginAuth}>Booking</button>
+            <button onClick={loginAuth}>Foglalás</button>
           </div>
         </div>
       ) : (
         <div className="bookNow">
-          <Link to="/booking">Book Now!</Link>
+          <Link to="/booking">Foglalj most!</Link>
         </div>
       )}
     </div>

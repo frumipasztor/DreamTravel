@@ -1,11 +1,11 @@
 export const SideBarData = [
   {
-    title: "Home",
+    title: "Főoldal",
     path: "/",
     className: "nav-text",
   },
   {
-    title: "About",
+    title: "Rólunk",
     path: "/about",
     className: "nav-text",
   },
@@ -15,12 +15,12 @@ export const SideBarData = [
     className: "nav-text",
   },
   {
-    title: "Tour",
+    title: "Utazás",
     path: "/tour",
     className: "nav-text",
   },
   {
-    title: "Contact",
+    title: "Elérhetőség",
     path: "/contact",
     className: "nav-text",
   },

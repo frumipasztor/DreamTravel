@@ -8,7 +8,7 @@ const BlogPostMini = ({ data }) => {
       <img src={`/img/${data.img}.jpg`} alt="hawaii"></img>
       <p>{data.summary}</p>
       <Link to={data.path} className="bloglink">
-        Continue reading...
+        Tovább olvasok...
       </Link>
     </div>
   );

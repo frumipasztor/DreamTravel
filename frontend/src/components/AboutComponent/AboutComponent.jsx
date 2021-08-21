@@ -21,7 +21,7 @@ const AboutComponent = () => {
   return (
     <div className="About">
       <div className="about-content">
-        <h1>About us</h1>
+        <h1>Rólunk</h1>
         <div className="about-content-text">
           <p>{data.pharagraph1}</p>
           <p>{data.pharagraph2}</p>

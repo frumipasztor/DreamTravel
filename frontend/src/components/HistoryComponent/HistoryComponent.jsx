@@ -24,7 +24,7 @@ const HistoryComponent = () => {
       <div className="history-content">
         <h1>{data.title}</h1>
         <Link to="/blog" className="return">
-          Return
+          Vissza
         </Link>
         <div className="history-content-text">
           <p>{data.firstp}</p>

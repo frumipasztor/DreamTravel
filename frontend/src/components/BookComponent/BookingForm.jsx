@@ -68,7 +68,7 @@ const BookingForm = () => {
       <form onSubmit={(e) => onSubmit(e)}>
         <input
           type="text"
-          placeholder="Name"
+          placeholder="Név"
           name="name"
           value={name}
           required
@@ -76,7 +76,7 @@ const BookingForm = () => {
         />
         <input
           type="text"
-          placeholder="Phone number"
+          placeholder="Telefonszám"
           name="phone"
           value={phone}
           required
@@ -84,7 +84,7 @@ const BookingForm = () => {
         />
         <input
           type="email"
-          placeholder="Email"
+          placeholder="E-mail"
           name="email"
           value={email}
           required
@@ -92,7 +92,7 @@ const BookingForm = () => {
         />
         <input
           type="text"
-          placeholder="Country"
+          placeholder="Ország"
           name="country"
           value={country}
           required
@@ -100,7 +100,7 @@ const BookingForm = () => {
         />
         <input
           type="text"
-          placeholder="Post Code"
+          placeholder="Irányítószám"
           name="postCode"
           value={postCode}
           required
@@ -108,7 +108,7 @@ const BookingForm = () => {
         />
         <input
           type="text"
-          placeholder="City"
+          placeholder="Város"
           name="city"
           value={city}
           required
@@ -116,7 +116,7 @@ const BookingForm = () => {
         />
         <input
           type="text"
-          placeholder="Address"
+          placeholder="Cím"
           name="address"
           value={address}
           required
@@ -124,7 +124,7 @@ const BookingForm = () => {
         />
         <input
           type="number"
-          placeholder="Seat"
+          placeholder="Helyek száma"
           min="1"
           max={avaliableData.avaliable}
           name="seat"
@@ -133,16 +133,15 @@ const BookingForm = () => {
           onChange={(e) => onChange(e)}
         />
         <label htmlFor="tos">
-          <input type="checkbox" required name="tos" />I have read and agree to
-          the{" "}
+          <input type="checkbox" required name="tos" /> Elolvastam és elfogadom a 
           <a
             href="http://localhost:5000/pdf/TermsOfServices.pdf"
             className="tos"
           >
-            Terms of Service.
+            szerződési feltételeket.
           </a>
         </label>
-        <input type="submit" id="submit" value="Submit" />
+        <input type="submit" id="submit" value="Foglalás elküldése" />
       </form>
     </div>
   );
