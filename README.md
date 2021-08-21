@@ -9,7 +9,7 @@
 ## Create your .env file
 To run the app you will need to create your .env file and use your codes in it. The env file must have the followin properties:
 
-    PORT= "the port you want to run your application"
+    PORT= the port you want to run your application
     MONGO_LINK= your mongo uri
     CLIENT_SECRET= your google generated client secret
     CLIENT_ID= google generated client id
@@ -24,7 +24,6 @@ To run the app you will need to create your .env file and use your codes in it. 
     npm run test:watch
 
 # Frontend
-
 ## Install the Frontend
 
     cd frontend
