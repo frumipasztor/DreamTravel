@@ -7,7 +7,7 @@ const CoreComponent = () => {
   return (
     <div className="coreE">
       <header>
-        <Link to="https://frumipasztor.github.io/DreamTravel/">Dreamtravel.</Link>
+        <Link to="/">Dreamtravel.</Link>
       </header>
       <div className="glass"></div>
       <video src="./water.mov" autoPlay muted loop></video>

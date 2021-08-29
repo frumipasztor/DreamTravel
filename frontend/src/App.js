@@ -17,13 +17,13 @@ const App = () => {
         <NavBar/>
         <HashRouter>
           <Route path="/" exact component={Home} />
-          <Route path="/about"  component={About} />
-          <Route path="/contact"  component={ContactPage} />
-          <Route path="/blog"  component={BlogPage} />
-          <Route path="/tour"  component={Tour} />
-          <Route path="/booking"  component={BookingPage} />
-          <Route path="/history" component={HistoryPage} />
-          <Route path="/sights"  component={SightsPage} />
+          <Route path="/#/about"  component={About} />
+          <Route path="/#/contact"  component={ContactPage} />
+          <Route path="/#/blog"  component={BlogPage} />
+          <Route path="/#/tour"  component={Tour} />
+          <Route path="/#/booking"  component={BookingPage} />
+          <Route path="/#/history" component={HistoryPage} />
+          <Route path="/#/sights"  component={SightsPage} />
         </HashRouter>
       </Router>
     </>
