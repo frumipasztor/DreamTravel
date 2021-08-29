@@ -13,7 +13,7 @@ const BookingForm = () => {
   }, []);
 
   const avaliableDataFetch = async () => {
-    const result = await fetch("/api/travellimit");
+    const result = await fetch("https://dreamtravelserver.herokuapp.com/api/travellimit");
     const jsonData = await result.json();
   //  console.log(jsonData);
     setAvaliableData(jsonData);
@@ -52,7 +52,7 @@ const BookingForm = () => {
     if (seat <= avaliableData.avaliable) {
       await axios({
         method: "POST",
-        url: "/api/invoicedata",
+        url: "https://dreamtravelserver.herokuapp.com/api/invoicedata",
         data: formData,
         headers: {
           "Content-Type": "application/json",
@@ -135,7 +135,7 @@ const BookingForm = () => {
         <label htmlFor="tos">
           <input type="checkbox" required name="tos" /> Elolvastam és elfogadom a 
           <a
-            href="http://localhost:5000/pdf/TermsOfServices.pdf"
+            href="https://dreamtravelserver.herokuapp.com/pdf/TermsOfServices.pdf"
             className="tos"
           >
             szerződési feltételeket.

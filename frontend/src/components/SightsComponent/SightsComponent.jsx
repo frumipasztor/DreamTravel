@@ -13,7 +13,7 @@ const SightsComponent = () => {
   }, []);
 
   const fetchData = async () => {
-    const result = await fetch("/api/sights");
+    const result = await fetch("https://dreamtravelserver.herokuapp.com/api/sights");
     const jsonData = await result.json();
     //    console.log(jsonData);
     setData(jsonData);

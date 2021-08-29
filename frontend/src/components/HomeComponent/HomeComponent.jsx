@@ -7,7 +7,7 @@ const HomeComponent = () => {
   return (
     <div className="coreE">
       <header>
-        <Link to="#">Dreamtravel.</Link>
+        <Link to="https://frumipasztor.github.io/DreamTravel/">Dreamtravel.</Link>
       </header>
       <div className="glassHome"></div>
       <div className="content">

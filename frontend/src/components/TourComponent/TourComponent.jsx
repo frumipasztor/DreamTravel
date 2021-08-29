@@ -25,14 +25,14 @@ const TourComponent = () => {
   }, []);
 
   const fetchData = async () => {
-    const result = await fetch("/api/traveldetails");
+    const result = await fetch("https://dreamtravelserver.herokuapp.com/api/traveldetails");
     const jsonData = await result.json();
     //   console.log(jsonData);
     setData(jsonData);
   };
 
   const avaliableDataFetch = async () => {
-    const result = await fetch("/api/travellimit");
+    const result = await fetch("https://dreamtravelserver.herokuapp.com/api/travellimit");
     const jsonData = await result.json();
     // console.log(jsonData);
     setAvaliableData(jsonData);

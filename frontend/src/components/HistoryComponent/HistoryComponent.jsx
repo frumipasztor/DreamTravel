@@ -13,7 +13,7 @@ const HistoryComponent = () => {
   }, []);
 
   const fetchData = async () => {
-    const result = await fetch("/api/history");
+    const result = await fetch("https://dreamtravelserver.herokuapp.com/api/history");
     const jsonData = await result.json();
     //   console.log(jsonData);
     setData(jsonData);
