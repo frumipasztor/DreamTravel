@@ -16,14 +16,14 @@ const App = () => {
       <Router>
         <NavBar/>
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/about"  component={About} />
-          <Route path="/contact"  component={ContactPage} />
-          <Route path="/blog"  component={BlogPage} />
-          <Route path="/tour"  component={Tour} />
-          <Route path="/booking"  component={BookingPage} />
-          <Route path="/history" component={HistoryPage} />
-          <Route path="/sights"  component={SightsPage} />
+          <Route path="/DreamTravel/" exact component={Home} />
+          <Route path="/DreamTravel/about"  component={About} />
+          <Route path="/DreamTravel/contact"  component={ContactPage} />
+          <Route path="/DreamTravel/blog"  component={BlogPage} />
+          <Route path="/DreamTravel/tour"  component={Tour} />
+          <Route path="/DreamTravel/booking"  component={BookingPage} />
+          <Route path="/DreamTravel/history" component={HistoryPage} />
+          <Route path="/DreamTravel/sights"  component={SightsPage} />
         </Switch>
       </Router>
     </>
