@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, HashRouter, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import ContactPage from "./pages/ContactPage";
@@ -15,7 +15,7 @@ const App = () => {
     <>
       <Router>
         <NavBar/>
-        <Switch>
+        <HashRouter>
           <Route path="/DreamTravel/" exact component={Home} />
           <Route path="/DreamTravel/about"  component={About} />
           <Route path="/DreamTravel/contact"  component={ContactPage} />
@@ -24,7 +24,7 @@ const App = () => {
           <Route path="/DreamTravel/booking"  component={BookingPage} />
           <Route path="/DreamTravel/history" component={HistoryPage} />
           <Route path="/DreamTravel/sights"  component={SightsPage} />
-        </Switch>
+        </HashRouter>
       </Router>
     </>
   );
