@@ -77,7 +77,7 @@ const TourComponent = () => {
         </div>
       ) : (
         <div className="bookNow">
-          <Link to="/booking">Foglalj most!</Link>
+          <Link to="/DreamTravel/booking">Foglalj most!</Link>
         </div>
       )}
     </div>

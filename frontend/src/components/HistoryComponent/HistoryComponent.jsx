@@ -23,7 +23,7 @@ const HistoryComponent = () => {
     <div className="History">
       <div className="history-content">
         <h1>{data.title}</h1>
-        <Link to="/blog" className="return">
+        <Link to="/DreamTravel/blog" className="return">
           Vissza
         </Link>
         <div className="history-content-text">

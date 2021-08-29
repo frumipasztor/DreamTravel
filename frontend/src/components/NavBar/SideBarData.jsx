@@ -1,27 +1,27 @@
 export const SideBarData = [
   {
     title: "Főoldal",
-    path: "/",
+    path: "/DreamTravel/",
     className: "nav-text",
   },
   {
     title: "Rólunk",
-    path: "/about",
+    path: "/DreamTravel/about",
     className: "nav-text",
   },
   {
     title: "Blog",
-    path: "/blog",
+    path: "/DreamTravel/blog",
     className: "nav-text",
   },
   {
     title: "Utazás",
-    path: "/tour",
+    path: "/DreamTravel/tour",
     className: "nav-text",
   },
   {
     title: "Elérhetőség",
-    path: "/contact",
+    path: "/DreamTravel/contact",
     className: "nav-text",
   },
 ];
