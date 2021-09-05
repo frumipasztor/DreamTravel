@@ -14,7 +14,7 @@ const BlogComponent = () => {
   }, []);
 
   const fetchData = async () => {
-    const result = await fetch("/api/blog");
+    const result = await fetch("https://dreamtravelserver.herokuapp.com/api/blog");
     const jsonData = await result.json();
     //      console.log(jsonData);
     setData(jsonData);

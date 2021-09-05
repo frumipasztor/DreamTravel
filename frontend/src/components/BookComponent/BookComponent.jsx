@@ -18,7 +18,7 @@ const BookComponent = () => {
         body: JSON.stringify(token),
       };
 
-      fetch("/api/login", requestOptions)
+      fetch("https://dreamtravelserver.herokuapp.com/api/login", requestOptions)
         .then((response) => response.text())
         .then((data) => {
           localStorage.setItem("myToken", data);
@@ -34,7 +34,7 @@ const BookComponent = () => {
   }, []);
 
   const avaliableDataFetch = async () => {
-    const result = await fetch("/api/travellimit");
+    const result = await fetch("https://dreamtravelserver.herokuapp.com/api/travellimit");
     const jsonData = await result.json();
     setAvaliableData(jsonData);
   };
