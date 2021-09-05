@@ -36,7 +36,7 @@ const BookingForm = () => {
     setInputs({ ...inputs, [e.target.name]: e.target.value });
 
   const onSubmit = async (e) => {
-    //  e.preventDefault();
+      e.preventDefault();
 
     let formData = {
       name: name,
