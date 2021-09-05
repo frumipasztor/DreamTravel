@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 const TourComponent = () => {
   const loginAuth = () => {
-    window.location.href = `https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=535725902429-9naeaikllsb929cbp28tnm9tjj7vs9e0.apps.googleusercontent.com&scope=openid%20email&%20profile&redirect_uri=https%3A//frumipasztor.github.io/DreamTravel/booking&prompt=select_account`;
+    window.location.href = `https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=535725902429-v432uifnke70d514elsmph89hf9bf8j2.apps.googleusercontent.com&scope=openid%20email&%20profile&redirect_uri=https%3A//dreamtravel.netlify.app/booking&prompt=select_account`;
   };
 
   const [data, setData] = useState([]);
@@ -25,14 +25,14 @@ const TourComponent = () => {
   }, []);
 
   const fetchData = async () => {
-    const result = await fetch("https://dreamtravelserver.herokuapp.com/api/traveldetails");
+    const result = await fetch("/api/traveldetails");
     const jsonData = await result.json();
     //   console.log(jsonData);
     setData(jsonData);
   };
 
   const avaliableDataFetch = async () => {
-    const result = await fetch("https://dreamtravelserver.herokuapp.com/api/travellimit");
+    const result = await fetch("/api/travellimit");
     const jsonData = await result.json();
     // console.log(jsonData);
     setAvaliableData(jsonData);
@@ -77,7 +77,7 @@ const TourComponent = () => {
         </div>
       ) : (
         <div className="bookNow">
-          <Link to="/DreamTravel/booking">Foglalj most!</Link>
+          <Link to="/booking">Foglalj most!</Link>
         </div>
       )}
     </div>

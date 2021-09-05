@@ -1,0 +1,60 @@
+@media screen and (max-width: 1024px) {
+  .coreE header {
+    padding: 45px 10px;
+  }
+  .coreE header a {
+    font-size: 40px;
+  }
+  .coreE .content h2 {
+    font-size: 180px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .coreE header a {
+    font-size: 35px;
+  }
+  .coreE .content h2 {
+    font-size: 110px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .coreE header a {
+    font-size: 25px;
+  }
+  .coreE .content h2 {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .coreE header {
+    padding: 20px 15px;
+  }
+  .coreE header a {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .coreE .content h2 {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .coreE .content h2 {
+    font-size: 60px;
+  }
+  .coreE header a {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .coreE .content h2 {
+    font-size: 55px;
+  }
+}
+/*# sourceMappingURL=HomeResponsivity.css.map */

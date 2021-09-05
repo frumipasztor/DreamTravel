@@ -1,0 +1,117 @@
+@media screen and (max-width: 1024px) {
+  .Blog {
+    padding: 10px 0;
+  }
+  .Blog .blog-content {
+    width: 100%;
+  }
+  .Blog .blog-content h1 {
+    font-size: 50px;
+  }
+  .Blog .blog-content .blog-posts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .Blog .blog-content .blog-posts .BlogMini h2 {
+    font-size: 30px;
+  }
+  .Blog .blog-content .blog-posts .BlogMini img {
+    width: 60%;
+  }
+  .Blog .blog-content .blog-posts .BlogMini p {
+    font-size: 25px;
+  }
+  .Blog .blog-content .blog-posts .BlogMini a {
+    font-size: 25px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Blog .blog-content h1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+  .Blog .blog-content .blog-posts {
+    gap: 15px;
+  }
+  .Blog .blog-content .blog-posts .BlogMini h2 {
+    font-size: 25px;
+  }
+  .Blog .blog-content .blog-posts .BlogMini img {
+    width: 50%;
+  }
+  .Blog .blog-content .blog-posts .BlogMini p {
+    font-size: 20px;
+  }
+  .Blog .blog-content .blog-posts .BlogMini a {
+    font-size: 20px !important;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .Blog .blog-content h1 {
+    font-size: 35px;
+  }
+  .Blog .blog-content .blog-posts {
+    gap: 10px;
+    width: 80%;
+  }
+  .Blog .blog-content .blog-posts .BlogMini {
+    width: 100%;
+  }
+  .Blog .blog-content .blog-posts .BlogMini h2 {
+    font-size: 20px;
+  }
+  .Blog .blog-content .blog-posts .BlogMini img {
+    width: 25%;
+  }
+  .Blog .blog-content .blog-posts .BlogMini p {
+    font-size: 14px;
+  }
+  .Blog .blog-content .blog-posts .BlogMini a {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .Blog .blog-content h1 {
+    font-size: 30px;
+  }
+  .Blog .blog-content .blog-posts {
+    width: 80%;
+  }
+  .Blog .blog-content .blog-posts .BlogMini h2 {
+    font-size: 17px;
+  }
+  .Blog .blog-content .blog-posts .BlogMini p {
+    font-size: 12px;
+  }
+  .Blog .blog-content .blog-posts .BlogMini a {
+    font-size: 12px !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Blog .blog-content h1 {
+    font-size: 25px;
+  }
+  .Blog .blog-content .blog-posts {
+    gap: 15px;
+  }
+  .Blog .blog-content .blog-posts .BlogMini h2 {
+    font-size: 15px;
+  }
+  .Blog .blog-content .blog-posts .BlogMini img {
+    width: 40%;
+  }
+  .Blog .blog-content .blog-posts .BlogMini p {
+    font-size: 10px;
+  }
+  .Blog .blog-content .blog-posts .BlogMini .bloglink {
+    font-size: 10px;
+  }
+}
+/*# sourceMappingURL=BlogComponentResponsivity.css.map */

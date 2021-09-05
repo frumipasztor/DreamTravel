@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+.Contact {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -40%);
+          transform: translate(-50%, -40%);
+  z-index: 50;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  -webkit-box-shadow: 10px 0 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 0 15px rgba(0, 0, 0, 0.1);
+  padding: 30px 0;
+}
+
+.Contact .contact-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.Contact .contact-content h1 {
+  color: #003529;
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.Contact .contact-content h2 {
+  color: #028578;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+  font-size: 2em;
+}
+
+.Contact .contact-content h3 {
+  margin: 0 0 20px;
+  color: #003529;
+  font-size: 20px;
+}
+
+.Contact .contact-content .contact-cons {
+  color: black;
+}
+
+.Contact .contact-content .contact-cons p {
+  margin: 10px 0 0 0;
+  font-size: 18px;
+}
+/*# sourceMappingURL=Contact.css.map */

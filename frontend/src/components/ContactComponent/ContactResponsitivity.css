@@ -1,0 +1,70 @@
+@media screen and (max-width: 1024px) {
+  .Contact {
+    padding: 10px 0;
+  }
+  .Contact .contact-content {
+    width: 90%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Contact .contact-content h1 {
+    font-size: 50px;
+  }
+  .Contact .contact-content h2 {
+    font-size: 40px;
+  }
+  .Contact .contact-content h3 {
+    font-size: 30px;
+  }
+  .Contact .contact-content .contact-cons p {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Contact .contact-content h1 {
+    font-size: 40px;
+  }
+  .Contact .contact-content h2 {
+    font-size: 30px;
+  }
+  .Contact .contact-content h3 {
+    font-size: 20px;
+  }
+  .Contact .contact-content .contact-cons p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .Contact .contact-content h1 {
+    font-size: 35px;
+  }
+  .Contact .contact-content h2 {
+    font-size: 25px;
+  }
+  .Contact .contact-content h3 {
+    font-size: 15px;
+  }
+  .Contact .contact-content .contact-cons p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .Contact .contact-content h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .Contact .contact-content h2 {
+    font-size: 20px;
+  }
+  .Contact .contact-content h3 {
+    font-size: 12px;
+  }
+  .Contact .contact-content .contact-cons p {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=ContactResponsitivity.css.map */

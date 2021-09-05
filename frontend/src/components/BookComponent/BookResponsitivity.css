@@ -1,0 +1,116 @@
+@media screen and (max-width: 1024px) {
+  .Booking {
+    padding: 10px 0;
+  }
+  .Booking .booking-content {
+    width: 90%;
+  }
+  .Booking .booking-content h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+  }
+  .Booking .booking-content form input {
+    width: 80%;
+    padding: 13px;
+    font-size: 22px;
+  }
+  .Booking .booking-content form input::-webkit-input-placeholder {
+    font-size: 22px;
+  }
+  .Booking .booking-content form input:-ms-input-placeholder {
+    font-size: 22px;
+  }
+  .Booking .booking-content form input::-ms-input-placeholder {
+    font-size: 22px;
+  }
+  .Booking .booking-content form input::placeholder {
+    font-size: 22px;
+  }
+  .Booking .booking-content form input[type="checkbox"] {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .Booking .booking-content form label {
+    font-size: 22px;
+    margin: 15px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Booking .booking-content h1 {
+    font-size: 40px;
+  }
+  .Booking .booking-content form input {
+    width: 70%;
+    padding: 10px;
+    font-size: 20px;
+  }
+  .Booking .booking-content form input::-webkit-input-placeholder {
+    font-size: 20px;
+  }
+  .Booking .booking-content form input:-ms-input-placeholder {
+    font-size: 20px;
+  }
+  .Booking .booking-content form input::-ms-input-placeholder {
+    font-size: 20px;
+  }
+  .Booking .booking-content form input::placeholder {
+    font-size: 20px;
+  }
+  .Booking .booking-content form input[type="checkbox"] {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .Booking .booking-content form label {
+    font-size: 20px;
+    margin: 15px 0;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .Booking .booking-content h1 {
+    font-size: 35px;
+  }
+  .Booking .booking-content form input {
+    padding: 5px;
+    font-size: 16px;
+  }
+  .Booking .booking-content form input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .Booking .booking-content form input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .Booking .booking-content form input::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .Booking .booking-content form input::placeholder {
+    font-size: 16px;
+  }
+  .Booking .booking-content form input[type="checkbox"] {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .Booking .booking-content form label {
+    font-size: 18px;
+    margin: 15px 0;
+    text-align: center;
+  }
+  .Booking .booking-content form input[type="submit"] {
+    padding: 2px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .Booking .booking-content h1 {
+    font-size: 35px;
+  }
+  .Booking .booking-content form input {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=BookResponsitivity.css.map */

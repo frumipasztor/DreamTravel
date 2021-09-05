@@ -6,22 +6,22 @@ export const SideBarData = [
   },
   {
     title: "Rólunk",
-    path: "/#/about",
+    path: "/about",
     className: "nav-text",
   },
   {
     title: "Blog",
-    path: "/#/blog",
+    path: "/blog",
     className: "nav-text",
   },
   {
     title: "Utazás",
-    path: "/#/tour",
+    path: "/tour",
     className: "nav-text",
   },
   {
     title: "Elérhetőség",
-    path: "/#/contact",
+    path: "/contact",
     className: "nav-text",
   },
 ];

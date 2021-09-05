@@ -13,7 +13,7 @@ const SightsComponent = () => {
   }, []);
 
   const fetchData = async () => {
-    const result = await fetch("https://dreamtravelserver.herokuapp.com/api/sights");
+    const result = await fetch("/api/sights");
     const jsonData = await result.json();
     //    console.log(jsonData);
     setData(jsonData);
@@ -23,7 +23,7 @@ const SightsComponent = () => {
     <div className="Sights">
       <div className="sights-content">
         <h1>{data.title}</h1>
-        <Link to="/DreamTravel/blog" className="return">
+        <Link to="/blog" className="return">
           Vissza
         </Link>
 

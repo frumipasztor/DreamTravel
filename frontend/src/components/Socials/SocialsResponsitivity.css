@@ -1,0 +1,38 @@
+@media screen and (max-width: 1024px) {
+  .sci {
+    bottom: 40px;
+    right: 50px;
+  }
+  .sci li a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sci {
+    right: 30px;
+  }
+  .sci li a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .sci {
+    bottom: 20px;
+    right: 20px;
+  }
+  .sci li {
+    padding: 0 3px;
+  }
+  .sci li a {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .sci {
+    display: none;
+  }
+}
+/*# sourceMappingURL=SocialsResponsitivity.css.map */

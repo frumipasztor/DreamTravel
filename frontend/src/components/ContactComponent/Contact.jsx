@@ -15,7 +15,7 @@ const Contact = () => {
   }, []);
 
   const fetchData = async () => {
-    const result = await fetch("https://dreamtravelserver.herokuapp.com/api/contact");
+    const result = await fetch("/api/contact");
     const jsonData = await result.json();
     //   console.log(jsonData);
     setData(jsonData);

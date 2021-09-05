@@ -1,0 +1,94 @@
+@media screen and (max-width: 1024px) {
+  .Tour {
+    padding: 10px 0;
+  }
+  .Tour .tour-content {
+    width: 90%;
+  }
+  .Tour .tour-content h1 {
+    font-size: 50px;
+  }
+  .Tour .tour-content .tour-flex {
+    gap: 40px;
+  }
+  .Tour .tour-content .tour-flex h2 {
+    font-size: 40px;
+  }
+  .Tour .tour-content .tour-flex p {
+    font-size: 25px;
+  }
+  .Tour .bookNow a {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Tour .tour-content h1 {
+    font-size: 40px;
+  }
+  .Tour .tour-content .tour-flex {
+    gap: 40px;
+  }
+  .Tour .tour-content .tour-flex h2 {
+    font-size: 30px;
+  }
+  .Tour .tour-content .tour-flex p {
+    font-size: 20px;
+  }
+  .Tour .bookNow a {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .Tour .tour-content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Tour .tour-content h1 {
+    font-size: 35px;
+  }
+  .Tour .tour-content .tour-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+  }
+  .Tour .tour-content .tour-flex h2 {
+    font-size: 25px;
+  }
+  .Tour .tour-content .tour-flex p {
+    font-size: 15px;
+  }
+  .Tour .bookNow a {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .Tour .tour-content h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .Tour .tour-content .tour-flex {
+    gap: 10px;
+  }
+  .Tour .tour-content .tour-flex h2 {
+    font-size: 20px;
+  }
+  .Tour .tour-content .tour-flex p {
+    font-size: 12px;
+  }
+  .Tour .bookNow a {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=TourResponsivity.css.map */
