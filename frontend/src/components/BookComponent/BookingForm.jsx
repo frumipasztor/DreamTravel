@@ -13,7 +13,7 @@ const BookingForm = () => {
   }, []);
 
   const avaliableDataFetch = async () => {
-    const result = await fetch("/api/travellimit");
+    const result = await fetch("https://dreamtravelserver.herokuapp.com/api/travellimit");
     const jsonData = await result.json();
   //  console.log(jsonData);
     setAvaliableData(jsonData);
