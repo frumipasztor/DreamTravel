@@ -15,7 +15,7 @@ const login = (req, res) => {
     code: code,
     client_id: CLIENT_ID,
     client_secret: CLIENT_SECRET,
-    redirect_uri: "https://frumipasztor.github.io/DreamTravel/booking",
+    redirect_uri: "https://dreamtravel.netlify.app/booking",
     grant_type: "authorization_code",
   };
 

@@ -9,13 +9,6 @@ it("Testing to see if Jest works", () => {
   expect(1).toBe(1);
 });
 
-it("gets the test endpoint", async () => {
-  const response = await request.get("/");
-
-  expect(response.status).toBe(200);
-  expect(response.body.message).toBe("pass!");
-});
-
 it("testing the pdf endpoint", async () => {
   const response = await request.get("/pdf");
 

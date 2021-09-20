@@ -28,7 +28,7 @@ const invoiceData = async (req, res) => {
     await Customer.insertMany(customer);
     let newCurrent = parseInt(travel.current) + parseInt(customer.seat);
     travel.current = newCurrent;
-    await billingo(customer, travel);
+ //   await billingo(customer, travel);
     await travel.save();
   } else {
     res.status(400).json("Sorry not enough avaliable space")
