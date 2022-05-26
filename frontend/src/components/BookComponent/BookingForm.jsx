@@ -52,14 +52,15 @@ const BookingForm = () => {
     if (seat <= avaliableData.avaliable) {
       await axios({
         method: "POST",
-        url: "https://dreamtravelserver.herokuapp.com/api/invoicedata",
+        url: "http://localhost:5000/api/invoicedata",
         data: formData,
         headers: {
           "Content-Type": "application/json",
         },
       }).then((response) => console.log(response.data));
+      return alert("Foglalás elküldve!");
     } else {
-      return alert("Sorry, not enough avaliable seat!");
+      return alert("Elnézést, nincs elegendő hely!");
     }
   };
 
@@ -135,7 +136,7 @@ const BookingForm = () => {
         <label htmlFor="tos">
           <input type="checkbox" required name="tos" /> Elolvastam és elfogadom a 
           <a
-            href="https://dreamtravelserver.herokuapp.com/pdf/TermsOfServices.pdf"
+            href="http://localhost:5000/pdf/TermsOfServices.pdf"
             className="tos"
           >
             szerződési feltételeket.

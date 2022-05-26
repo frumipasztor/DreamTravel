@@ -9,9 +9,10 @@ import * as MdIcons from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const TourComponent = () => {
-  const loginAuth = () => {
+/*  const loginAuth = () => {
     window.location.href = `https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=535725902429-9naeaikllsb929cbp28tnm9tjj7vs9e0.apps.googleusercontent.com&scope=openid%20email&%20profile&redirect_uri=https%3A//dreamtravel.netlify.app/booking&prompt=select_account`;
   };
+  */
 
   const [data, setData] = useState([]);
   const [avaliableData, setAvaliableData] = useState([]);
@@ -69,7 +70,7 @@ const TourComponent = () => {
           </div>
         </div>
       </div>
-      {!localStorage.getItem("myToken") ? (
+      {/* {!localStorage.getItem("myToken") ? (
         <div className="login">
           <div className="button">
             <button onClick={loginAuth}>Foglalás</button>
@@ -79,7 +80,10 @@ const TourComponent = () => {
         <div className="bookNow">
           <Link to="/booking">Foglalj most!</Link>
         </div>
-      )}
+      )} */}
+       <div className="bookNow">
+          <Link to="/booking">Foglalj most!</Link>
+        </div>
     </div>
   );
 };
