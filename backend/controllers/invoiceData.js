@@ -28,10 +28,11 @@ const invoiceData = async (req, res) => {
     await Customer.insertMany(customer);
     let newCurrent = parseInt(travel.current) + parseInt(customer.seat);
     travel.current = newCurrent;
- //   await billingo(customer, travel);
-    await travel.save();
+    await billingo(customer, travel);
+    await travel.save();    
+    res.status(200).json("Foglalás elküldve")
   } else {
-    res.status(400).json("Sorry not enough avaliable space")
+    res.status(400).json("Elnézést, nincs elegendő hely!")
   }
 };
 

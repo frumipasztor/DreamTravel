@@ -9,8 +9,9 @@ const blog = require("../controllers/blog");
 const history = require("../controllers/history");
 const sights = require("../controllers/sights");
 
-
+/*
 router.post("/login", login);
+*/
 
 router.post('/invoicedata', invoiceData);
 

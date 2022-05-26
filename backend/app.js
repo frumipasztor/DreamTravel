@@ -28,6 +28,7 @@ const corsOptions = {
     optionSuccessStatus: 200,
 };
 */
+/*
 let HEADERS = {
     'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Origin',
     'Content-Type': 'application/json', //optional
@@ -71,7 +72,7 @@ let HEADERS = {
 
 
 handler();
-
+*/
 app.use("/api", Route);
 
 /*
