@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+//import axios from "axios";
 import "./BookingForm.scss";
 
 const BookingForm = () => {
@@ -38,9 +38,9 @@ const BookingForm = () => {
     setInputs({ ...inputs, [e.target.name]: e.target.value });
 
   const onSubmit = async (e) => {
-    //e.preventDefault();
+    e.preventDefault();
 
-    let formData = {
+    /*   let formData = {
       name: name,
       phone: phone,
       email: email,
@@ -49,17 +49,17 @@ const BookingForm = () => {
       city: city,
       address: address,
       seat: seat,
-    };
+    };*/
 
     if (seat <= avaliableData.avaliable) {
-      await axios({
+      /* await axios({
         method: "POST",
         url: "https://dreamtravelserver.herokuapp.com/api/invoicedata",
         data: formData,
         headers: {
           "Content-Type": "application/json",
         },
-      }).then((response) => console.log(response.data));
+      }).then((response) => console.log(response.data));*/
       return alert("Foglalás elküldve!");
     } else {
       return alert("Elnézést, nincs elegendő hely!");
