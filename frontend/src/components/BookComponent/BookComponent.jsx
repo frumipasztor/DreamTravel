@@ -8,25 +8,6 @@ const BookComponent = () => {
   const [avaliableData, setAvaliableData] = useState([]);
 
   useEffect(() => {
-    if (!localStorage.getItem("myToken")) {
-      const code = new URL(window.location.href).searchParams.get("code");
-      const token = { code: code };
-
-      const requestOptions = {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(token),
-      };
-
-      fetch("https://dreamtravelserver.herokuapp.com/api/login", requestOptions)
-        .then((response) => response.text())
-        .then((data) => {
-          localStorage.setItem("myToken", data);
-        });
-    }
-  }, []);
-
-  useEffect(() => {
     const dataFetch = async () => {
       await avaliableDataFetch();
     };
@@ -34,7 +15,9 @@ const BookComponent = () => {
   }, []);
 
   const avaliableDataFetch = async () => {
-    const result = await fetch("https://dreamtravelserver.herokuapp.com/api/travellimit");
+    const result = await fetch(
+      "https://dreamtravelserver.herokuapp.com/api/travellimit"
+    );
     const jsonData = await result.json();
     setAvaliableData(jsonData);
   };

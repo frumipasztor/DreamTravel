@@ -5,7 +5,6 @@ $curlyfont: "Dancing Script", cursive;
 $green: #003529;
 $lightgreen: #028578;
 
-
 .Tour {
   position: absolute;
   top: 40%;
@@ -17,6 +16,18 @@ $lightgreen: #028578;
   backdrop-filter: blur(15px);
   box-shadow: 10px 0 15px rgba(0, 0, 0, 0.1);
   padding: 30px 0;
+  min-height: 300px;
+
+  h1 {
+    color: #003529;
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+  }
 
   .tour-content {
     display: flex;
@@ -26,15 +37,7 @@ $lightgreen: #028578;
     width: 50%;
     margin: 0 auto;
   }
-  h1 {
-    color: #003529;
-    font-size: 3em;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
-    margin-bottom: 5px;
-  }
+
   .tour-flex {
     display: flex;
     flex-direction: row;
@@ -48,12 +51,12 @@ $lightgreen: #028578;
     .tour-right {
       width: 40%;
 
-      h2{
-        color:$green;
+      h2 {
+        color: $green;
         text-transform: uppercase;
         letter-spacing: 2px;
       }
-      .avaliable{
+      .avaliable {
         font-weight: 500;
         color: $green;
       }
@@ -83,14 +86,14 @@ $lightgreen: #028578;
       cursor: pointer;
     }
   }
-.bookNow{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  a {
-  text-align: center;
-  margin-top: 20px;
-  width:fit-content;
-  }}
-  
+  .bookNow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      text-align: center;
+      margin-top: 20px;
+      width: fit-content;
+    }
+  }
 }

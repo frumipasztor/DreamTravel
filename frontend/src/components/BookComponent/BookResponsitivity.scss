@@ -11,12 +11,13 @@
 @media screen and (max-width: 1024px) {
   .Booking {
     padding: 10px 0;
+    h1 {
+      font-size: 50px;
+      margin-bottom: 0;
+    }
     .booking-content {
       width: 90%;
-      h1 {
-        font-size: 50px;
-        margin-bottom: 0;
-      }
+
       form {
         input {
           width: 80%;
@@ -45,10 +46,10 @@
 //ipad
 @media screen and (max-width: 768px) {
   .Booking {
+    h1 {
+      font-size: 40px;
+    }
     .booking-content {
-      h1 {
-        font-size: 40px;
-      }
       form {
         input {
           width: 70%;
@@ -74,10 +75,10 @@
 //Surface Duo
 @media screen and (max-width: 540px) {
   .Booking {
+    h1 {
+      font-size: 35px;
+    }
     .booking-content {
-      h1 {
-        font-size: 35px;
-      }
       form {
         input {
           padding: 5px;
@@ -121,10 +122,10 @@
 //galaxy fold
 @media screen and (max-width: 280px) {
   .Booking {
+    h1 {
+      font-size: 35px;
+    }
     .booking-content {
-      h1 {
-        font-size: 35px;
-      }
       form {
         input {
           width: 90%;

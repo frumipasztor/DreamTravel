@@ -11,13 +11,13 @@
 @media screen and (max-width: 1024px) {
   .Contact {
     padding: 10px 0;
+    h1 {
+      font-size: 50px;
+    }
     .contact-content {
       width: 90%;
       align-items: center;
 
-      h1 {
-        font-size: 50px;
-      }
       h2 {
         font-size: 40px;
       }
@@ -39,10 +39,10 @@
 //ipad
 @media screen and (max-width: 768px) {
   .Contact {
+    h1 {
+      font-size: 40px;
+    }
     .contact-content {
-      h1 {
-        font-size: 40px;
-      }
       h2 {
         font-size: 30px;
       }
@@ -61,10 +61,10 @@
 //Surface Duo
 @media screen and (max-width: 540px) {
   .Contact {
+    h1 {
+      font-size: 35px;
+    }
     .contact-content {
-      h1 {
-        font-size: 35px;
-      }
       h2 {
         font-size: 25px;
       }
@@ -83,11 +83,11 @@
 //iPhone6/7/8 Plus
 @media screen and (max-width: 414px) {
   .Contact {
+    h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
     .contact-content {
-      h1 {
-        font-size: 30px;
-        margin-bottom: 10px;
-      }
       h2 {
         font-size: 20px;
       }

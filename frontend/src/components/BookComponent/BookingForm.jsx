@@ -13,9 +13,11 @@ const BookingForm = () => {
   }, []);
 
   const avaliableDataFetch = async () => {
-    const result = await fetch("https://dreamtravelserver.herokuapp.com/api/travellimit");
+    const result = await fetch(
+      "https://dreamtravelserver.herokuapp.com/api/travellimit"
+    );
     const jsonData = await result.json();
-  //  console.log(jsonData);
+    //  console.log(jsonData);
     setAvaliableData(jsonData);
   };
 
@@ -36,7 +38,7 @@ const BookingForm = () => {
     setInputs({ ...inputs, [e.target.name]: e.target.value });
 
   const onSubmit = async (e) => {
-      e.preventDefault();
+    //e.preventDefault();
 
     let formData = {
       name: name,
@@ -134,7 +136,8 @@ const BookingForm = () => {
           onChange={(e) => onChange(e)}
         />
         <label htmlFor="tos">
-          <input type="checkbox" required name="tos" /> Elolvastam és elfogadom a 
+          <input type="checkbox" required name="tos" /> Elolvastam és elfogadom
+          a
           <a
             href="https://dreamtravelserver.herokuapp.com/pdf/TermsOfServices.pdf"
             className="tos"

@@ -11,11 +11,12 @@
 @media screen and (max-width: 1024px) {
   .Blog {
     padding: 10px 0;
+    h1 {
+      font-size: 50px;
+    }
     .blog-content {
       width: 100%;
-      h1 {
-        font-size: 50px;
-      }
+
       .blog-posts {
         flex-direction: column;
         gap: 30px;
@@ -42,11 +43,11 @@
 //ipad
 @media screen and (max-width: 768px) {
   .Blog {
+    h1 {
+      font-size: 40px;
+      margin-bottom: 5px;
+    }
     .blog-content {
-      h1 {
-        font-size: 40px;
-        margin-bottom: 5px;
-      }
       .blog-posts {
         gap: 15px;
 
@@ -72,10 +73,10 @@
 //Surface Duo
 @media screen and (max-width: 540px) {
   .Blog {
+    h1 {
+      font-size: 35px;
+    }
     .blog-content {
-      h1 {
-        font-size: 35px;
-      }
       .blog-posts {
         gap: 10px;
         width: 80%;
@@ -103,10 +104,10 @@
 //iPhone6/7/8 Plus
 @media screen and (max-width: 414px) {
   .Blog {
+    h1 {
+      font-size: 30px;
+    }
     .blog-content {
-      h1 {
-        font-size: 30px;
-      }
       .blog-posts {
         width: 80%;
         .BlogMini {
@@ -134,10 +135,10 @@
 
 @media screen and (max-width: 320px) {
   .Blog {
+    h1 {
+      font-size: 25px;
+    }
     .blog-content {
-      h1 {
-        font-size: 25px;
-      }
       .blog-posts {
         gap: 15px;
         .BlogMini {

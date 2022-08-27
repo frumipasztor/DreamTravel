@@ -16,6 +16,7 @@ $lightgreen: #028578;
   backdrop-filter: blur(15px);
   box-shadow: 10px 0 15px rgba(0, 0, 0, 0.1);
   padding: 30px 0;
+  min-height: 300px;
 
   .history-content {
     display: flex;
@@ -27,6 +28,7 @@ $lightgreen: #028578;
     h1 {
       color: #003529;
       font-size: 3em;
+      text-align: center;
       text-transform: uppercase;
       font-weight: 700;
       letter-spacing: 2px;
