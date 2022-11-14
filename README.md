@@ -1,6 +1,6 @@
 # DreamTravel website
 
-## Deployed wersion can be found here:
+## Deployed version can be found here:
     https://dreamtravel.netlify.app
 
 # Backend
